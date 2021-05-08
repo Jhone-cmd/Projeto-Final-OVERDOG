@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/gerenciadorProdutos.css">
+    <title>Gerenciador de Produtos</title>
+ </head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Produtos</h1>
+    <form id="formulario">
+        <div class="row">
+            <div class="form-group col-md-2">
+               <label for="codigo">Código:</label>
+               <input type="text" class="form-control" id="codigo">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="valor">Valor:</label>
+                <input type="text" class="form-control" id="valor">
+             </div>
+
+             <div class="form-group col-md-4">
+                <label for="grupo">Grupo:</label>
+                <input type="text" class="form-control" id="grupo">
+             </div>
+
+             <div class="form-group col-md-4">
+                <label for="categoria">Tipo:</label>
+                <input type="text" class="form-control" id="categoria">
+             </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="descricao">Descrição</label>
+                <input type="text" class="form-control" id="descricao">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-secondary" onclick="novoProduto()">Novo</button>
+                <button type="button" class="btn btn-primary" onclick="gravarProduto()">Gravar</button>
+                <button type="button" class="btn btn-danger" onclick="apagarProduto()">Apagar</button>
+                <input type="hidden" id="index">
+            </div>
+        </div>
+    </form>
+        <br>
+
+        <table class="table table-yellow table-hover">
+            <thead>
+                <th width="5%">Cód</th>
+                <th width="20%">Grupo</th>
+                <th width="70%">Descrição</th>
+                <th width="5%">Valor</th>
+                <th width="5%">#</th>
+            </thead>
+
+            <tbody id="corpoTabela"></tbody>
+        </table>
+    </div>
+
+<script src="scripts/carregarProdutos.js"></script>
+<script src="scripts/gerenciadorProdutos.js"></script>
+
+</body>
+</html>

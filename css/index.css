@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 255, 228);
+}
+header{
+    position: fixed;
+    width: 100%; 
+    margin-bottom: 100px;
+    z-index: 1;
+    top: 0px;
+}
+h1{
+    background-color: #ffd900;
+    color: black;
+    font-family: "Alfa Slab One";
+    font-size: 32px;
+    letter-spacing: 5px;
+    padding-left: 12%;
+    border-bottom: solid black 3px;    
+}
+h1 span{
+    background-color: black;
+    color: #ffd900;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#enviar{
+    background-color: black;
+    color:yellow;
+    position: fixed;
+    right: 12%;
+    top: 3px;
+    font-family: "Alfa Slab One" ;
+    letter-spacing: 3px;
+    font-size: 22px;
+    padding-right: 5px;
+    padding-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.conteudo{
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+h2{
+    margin-top: 4px;
+    border-left: solid orange 2px;
+    border-bottom: solid orange 2px;
+    padding-left: 3px;
+    font-size: 25px;
+    font-family: "Calistoga";
+    position: relative;
+    letter-spacing: 1px;
+}
+
+h2 span{
+    letter-spacing: 1px;
+    font-size: 16px;
+    position: absolute;
+    right:2px;
+}
+
+.produto{
+    background-color: #fff4b2;
+    position: relative;
+    height: 70px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.produto .cod-produto{
+    position: absolute;
+    background-color: black;
+    color: yellow;
+    width: 20%;
+    font-family: "Alfa Slab One";
+    text-align: center;
+    font-size: 32px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.produto .valor-produto{
+    top: 50px;
+    position: absolute;
+    background-color: #ffd900;
+    color: black;
+    width: 20%;
+    font-family: "Alfa Slab One";
+    text-align: center;
+    font-size: 13px;
+}
+.produto  .desc-produto{
+    display: inline-block;
+}
+.produto .cod-produto{
+    position: absolute;
+}
+.produto .desc-produto{
+    padding-left: 22%;
+    text-transform: lowercase;
+}
+
+.adicionais{
+    background-color: #fff4b2;
+    position: relative;
+    height: 22px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.adicionais .valor-produto{
+    position: absolute;
+    background-color: black;
+    color: #ffd900;
+    width: 20%;
+    font-family: "Alfa Slab One";
+    text-align: center;
+    font-size: 16px;
+}
+
+.adicionais .desc-produto{
+    padding-left: 20.5%;
+    margin-left: 20px;
+    
+}
+
+.add-produto{
+    height: 23px;
+    background-color: #8080806e;
+    position: relative;
+    text-align: center;
+    font-family: "Alfa Slab One"; 
+    display: none;
+}
+
+.botoes{
+    position: absolute;
+    right: 10px;
+    top: -8px;
+}
+
+.botoes button{
+    width: 25px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+
+.bt-mais{
+    background-color: #ffd900;
+    color: black;
+    font-family: "Alfa Slab One";
+}
+.bt-menos{
+    background-color:black ;
+    color: #ffd900;
+    font-family: "Alfa Slab One";
+}
+#modal-enviar{
+    display: none;
+}
+
+#modal-enviar{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding-top: 100px;
+}
+
+.titulo-modal{
+    font-size: 20px;
+    font-family: "Alfa Slab One";
+    background-color: greenyellow;
+    width: 75%;
+    margin: auto;
+    padding: 15px ;
+    position: relative;
+   
+}
+.titulo-modal span{
+    cursor: pointer;
+    color: black;
+    right: 15px;
+    top: 0px;
+}
+
+.corpo-modal{
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+}
+.rodape-modal{
+    background-color: greenyellow;
+    width: 75%;
+    margin: auto;
+    padding: 25px ;
+    position: relative;
+}
+.rodape-modal button{
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    background-color: black;
+    color: greenyellow;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+#complemento-envio{
+    display: none;
+}
+#complemento-envio input{
+    width: 80%;
+    padding: 5px;
+    margin: 5px;
+}
+#complemento-envio span{
+    width: 80%;
+    padding: 5px;
+    margin: 3px;
+    font-size: 15px;
+    display: block;
+}
+footer{
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        background-color: rgb(255, 255, 228);
+    }
+
+    #enviar{
+        top: 93%;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        position: fixed;
+        }
+    h1{
+        padding-left: 2%;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .conteudo{
+        padding-right: 4px;
+        padding-left: 4px;    
+    }
+    .produto .cod-produto{
+        font-size: 25px;
+    }
+    .produto  .desc-produto{
+        font-size: 15px;
+        text-transform: lowercase;
+    }
+
+    .adicionais .valor-produto{
+        width: 33%;
+    }
+
+    .adicionais .desc-produto{
+        padding-left: 33.5%;
+    }
+}
+@media only screen and (max-width: 400px){
+    body{
+        background-color: rgb(255, 255, 228);
+    }
+        
+    #enviar{
+        top: 93%;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        position: fixed;
+        }
+    h1{
+        padding-left: 2%;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .conteudo{
+        padding-right: 4px;
+        padding-left: 4px;    
+    }
+    h2{
+        font-size: 20px;
+    }
+    .produto .cod-produto{
+        font-size: 25px;
+    }
+    .produto  .desc-produto{
+        font-size: 75%;
+        text-transform: lowercase;
+    }
+    
+    .adicionais .valor-produto{
+        width: 33%;
+    }
+    
+    .adicionais .desc-produto{
+        padding-left: 33.5%;
+    }
+}
+
+
+

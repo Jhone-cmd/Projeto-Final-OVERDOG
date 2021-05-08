@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(255, 255, 228);
+    text-align: center;
+}
+h1{
+    margin-top: 10px;
+    
+    background-color: #ffd900;
+    color: black;
+    font-family: "Alfa Slab One";
+    font-size: 32px;
+    letter-spacing: 5px;
+    padding-left: 12%;
+    border-top: solid black 3px;
+    border-left: solid black 3px;
+    border-right: solid black 3px;
+    border-bottom: solid black 3px;
+}
+td{
+    text-transform: lowercase;
+}
+td span{
+    font-size: 25px;
+    padding: 2px 4px 2px 10px;           
+    color: black;
+    margin-left: 8px;
+    cursor: pointer;
+}
