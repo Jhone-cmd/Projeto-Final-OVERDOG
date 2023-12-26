@@ -127,7 +127,7 @@ function continuar(){
     if(nome.value == ''){
         alert('Digite o seu nome!')
     }else{
-        fone = '5561994370463'
+        fone = '5561986796746'
         nome = document.getElementById('nome').value
         endereco = document.getElementById('endereco').value
         pedido = `Olá meu nome é ${nome}. Desejo fazer o seguinte pedido: ${pedido}`
